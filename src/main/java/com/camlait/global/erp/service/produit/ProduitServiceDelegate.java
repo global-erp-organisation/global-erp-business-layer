@@ -14,7 +14,9 @@ import org.springframework.data.domain.Pageable;
 
 import com.camlait.global.erp.domain.enumeration.Portee;
 import com.camlait.global.erp.domain.model.json.produit.CategorieProduitModel;
+import com.camlait.global.erp.domain.model.json.produit.CategorieProduitTaxeModel;
 import com.camlait.global.erp.domain.model.json.produit.ProduitModel;
+import com.camlait.global.erp.domain.model.json.produit.ProduitTaxeModel;
 import com.camlait.global.erp.domain.produit.CategorieProduit;
 import com.camlait.global.erp.domain.produit.CategorieProduitTaxe;
 import com.camlait.global.erp.domain.produit.ProduitTaxe;
@@ -98,12 +100,12 @@ public class ProduitServiceDelegate {
         return pms;
     }
     
-    public ProduitTaxe obtenirProduitTaxe(Long produitTaxeId) {
-        return null;
+    public ProduitTaxeModel obtenirProduitTaxe(Long produitTaxeId) {
+        return new ProduitTaxeModel(produitService.obtenirProduitTaxe(produitTaxeId));
     }
     
-    public CategorieProduitTaxe obtenirCategorieProduitTaxe(Long categorieProduitTaxeId) {
-        return null;
+    public CategorieProduitTaxeModel obtenirCategorieProduitTaxe(Long categorieProduitTaxeId) {
+        return new CategorieProduitTaxeModel(produitService.obtenirCategorieProduitTaxe(categorieProduitTaxeId));
     }
     
     public Collection<CategorieProduitModel> listerCategorie(Portee portee) {

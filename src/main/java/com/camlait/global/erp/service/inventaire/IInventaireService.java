@@ -38,7 +38,7 @@ public interface IInventaireService {
      * 
      * @param inventaireId
      *            Identifiant de l'inventaire.
-     * @return Inventaire recherchée.
+     * @return InventaireModel recherchée.
      */
     Inventaire obtenirInventaire(Long inventaireId) throws GlobalErpServiceException, IllegalArgumentException;
     
@@ -47,7 +47,7 @@ public interface IInventaireService {
      * 
      * @param inventaireId
      *            code de l'inventaire.
-     * @return Inventaire recherchée.
+     * @return InventaireModel recherchée.
      */
     Inventaire obtenirInventaire(String codeInventaire) throws GlobalErpServiceException, IllegalArgumentException;
     

@@ -37,7 +37,7 @@ public interface IDocumentService {
      * 
      * @param documentId
      *            Identifiant du document cherché.
-     * @return Document cherché.
+     * @return DocumentModel cherché.
      */
     <T> T obtenirDocument(Class<T> entityClass, Long documentId) throws GlobalErpServiceException,ClassCastException;
     
@@ -46,7 +46,7 @@ public interface IDocumentService {
      * 
      * @param documentId
      *            code du document cherché.
-     * @return Document cherché.
+     * @return DocumentModel cherché.
      */
     <T> T obtenirDocument(Class<T> entityClass, String codeDocument) throws GlobalErpServiceException,ClassCastException;
     

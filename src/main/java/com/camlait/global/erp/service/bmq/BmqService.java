@@ -220,7 +220,7 @@ public class BmqService implements IBmqService {
      * Genere les ligne du bmq à partir des documents associés.
      * 
      * @param bmq
-     *            Bmq concerné.
+     *            BmqModel concerné.
      * @param documents
      *            documents associés.
      * @return
