@@ -5,8 +5,6 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 
-import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -18,10 +16,8 @@ import com.camlait.global.erp.domain.model.json.produit.CategorieProduitTaxeMode
 import com.camlait.global.erp.domain.model.json.produit.ProduitModel;
 import com.camlait.global.erp.domain.model.json.produit.ProduitTaxeModel;
 import com.camlait.global.erp.domain.produit.CategorieProduit;
-import com.camlait.global.erp.domain.produit.CategorieProduitTaxe;
-import com.camlait.global.erp.domain.produit.ProduitTaxe;
 
-@Transactional
+
 public class ProduitServiceDelegate {
     
     @Autowired
