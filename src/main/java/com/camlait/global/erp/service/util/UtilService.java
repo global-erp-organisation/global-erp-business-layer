@@ -47,7 +47,6 @@ public class UtilService implements IUtilService {
 	@Autowired
 	private EntrepotDao entrepotDao;
 
-
 	@Override
 	public String genererCode(Entite entite) {
 		return dernierId(entite);
@@ -95,5 +94,4 @@ public class UtilService implements IUtilService {
 		return type.getType().toUpperCase()
 				+ (Utility.convertToLong(StringUtils.removeStart(dernierCode, type.getType())) + 1);
 	}
-
 }
