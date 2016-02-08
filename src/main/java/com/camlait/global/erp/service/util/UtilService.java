@@ -89,7 +89,7 @@ public class UtilService implements IUtilService {
 			throw new IllegalArgumentException("L'entité " + entite.getClass().getName() + " n'existe pas");
 
 		if (dernierCode == null) {
-			return type.getType().toUpperCase() + 1;
+			return type.getType().toUpperCase().concat("1");
 		}
 		return type.getType().toUpperCase()
 				+ (Utility.convertToLong(StringUtils.removeStart(dernierCode, type.getType())) + 1);

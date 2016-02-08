@@ -45,7 +45,6 @@ public class BmqServiceDelegate {
 
 	public void supprimerBmq(Long bmqId) {
 		bmqService.supprimerBmq(bmqId);
-		;
 	}
 
 	public Page<BmqModel> listerBmq(Pageable p) {
