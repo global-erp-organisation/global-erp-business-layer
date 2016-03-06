@@ -34,7 +34,9 @@ public class ProduitServiceDelegate {
     public Collection<ProduitModel> listerProduit(CategorieProduit categorie) {
         final Collection<ProduitModel> pms = new HashSet<>();
         produitService.listerProduit(categorie).stream().forEach(p -> {
-            pms.add(new ProduitModel(p));
+        	//System.out.println(p);
+            //pms.add(new ProduitModel(p));
+            pms.add(ProduitModel.createProduitModel(p));
         });
         return pms;
     }
